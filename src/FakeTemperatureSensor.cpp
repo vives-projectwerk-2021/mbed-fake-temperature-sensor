@@ -3,7 +3,7 @@
 
 FakeTemperatureSensor::FakeTemperatureSensor()
 {
-  srand(time(NULL))
+  srand(time(NULL));
 }
 
 uint8_t FakeTemperatureSensor::measure()
