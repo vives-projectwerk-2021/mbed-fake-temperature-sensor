@@ -6,5 +6,5 @@ class FakeTemperatureSensor
 {
     public:
         FakeTemperatureSensor();
-        uint8_t temperature();
+        uint16_t temperature();
 };
