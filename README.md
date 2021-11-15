@@ -10,7 +10,7 @@ To use this library you first need to make an instance of the class. You don't n
 
 ### Use the method temperature()
 
-To get a value of the sensor you can just call the method temperature() on your instance. When you use the method temperature() you get a value with a type uint16_t with a range of 17 to 27.
+To get a value of the sensor you can just call the method temperature() on your instance. When you use the method temperature() you get a value with a type uint16_t. This value isn't the real temperature. To get the real temperature, you must divide the value by 256. The result is within the range of 17 to 27.
 
 ### Why this library
 

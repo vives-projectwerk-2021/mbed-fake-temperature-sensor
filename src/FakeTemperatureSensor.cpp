@@ -8,5 +8,5 @@ FakeTemperatureSensor::FakeTemperatureSensor()
 
 uint16_t FakeTemperatureSensor::temperature()
 {
-    return 17 + (rand() % 10);
+    return (17 + (rand() % 10))*256;
 }
