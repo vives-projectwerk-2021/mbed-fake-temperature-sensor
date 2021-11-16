@@ -6,7 +6,10 @@ FakeTemperatureSensor::FakeTemperatureSensor()
   srand(time(NULL));
 }
 
-uint16_t FakeTemperatureSensor::temperature()
+/** simulate a temperature measurement
+ *  @return temperature * 256
+ */
+int16_t FakeTemperatureSensor::temperature()
 {
-    return (17 + (rand() % 10))*256;
+    return (rand() % 14080)-3840;     //  [-3840, 10240] ~ [-15°C, 40°C]
 }
